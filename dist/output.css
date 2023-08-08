@@ -657,16 +657,6 @@ html {
   margin-bottom: auto;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .-ml-2 {
   margin-left: -0.5rem;
 }
@@ -731,6 +721,18 @@ html {
   margin-left: 1rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-16 {
+  margin-right: 4rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -751,36 +753,12 @@ html {
   margin-top: 6rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mt-36 {
   margin-top: 9rem;
 }
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.mr-16 {
-  margin-right: 4rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .box-border {
@@ -871,6 +849,10 @@ html {
   width: 75%;
 }
 
+.w-4\/12 {
+  width: 33.333333%;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -907,10 +889,6 @@ html {
   width: 100%;
 }
 
-.w-4\/12 {
-  width: 33.333333%;
-}
-
 .max-w-none {
   max-width: none;
 }
@@ -921,12 +899,6 @@ html {
 
 .grow {
   flex-grow: 1;
-}
-
-.scale-125 {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-150 {
@@ -965,10 +937,6 @@ html {
   flex-wrap: wrap;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -987,6 +955,10 @@ html {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-12 {
@@ -1011,31 +983,6 @@ html {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
-.gap-y-12 {
-  row-gap: 3rem;
-}
-
-.place-self-end {
-  place-self: end;
-}
-
-.self-end {
-  align-self: flex-end;
 }
 
 .overflow-hidden {
@@ -1164,11 +1111,6 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\.\/src\/img\/auth-1-bg\.png\'\)\] {
   background-image: url('../src/img/auth-1-bg.png');
 }
@@ -1193,12 +1135,12 @@ html {
   background-image: url('../src/img/cta-3-bg.png');
 }
 
-.bg-\[url\(\'\.\.\/src\/img\/header-2\.jpeg\'\)\] {
-  background-image: url('../src/img/header-2.jpeg');
-}
-
 .bg-\[url\(\'\.\.\/src\/img\/feature-3-bg\.jpeg\'\)\] {
   background-image: url('../src/img/feature-3-bg.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/src\/img\/header-2\.jpeg\'\)\] {
+  background-image: url('../src/img/header-2.jpeg');
 }
 
 .bg-cover {
@@ -1229,6 +1171,11 @@ html {
   padding: 3rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1237,11 +1184,6 @@ html {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 .px-4 {
@@ -1257,11 +1199,6 @@ html {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-56 {
-  padding-left: 14rem;
-  padding-right: 14rem;
 }
 
 .px-6 {
@@ -1292,16 +1229,6 @@ html {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-6 {
