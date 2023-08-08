@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../dist/output.css">
+</head>
+<body class="min-h-screen">
+  <div class="container h-screen mx-auto">
+    <div class="flex xl:gap-14 my-auto h-full md:gap-5 w-full">
+      <div class="w-6/12 p-12 flex items-center justify-center">
+        <div class="rounded-tl-3xl rounded-tr-[80px] w-full rounded-br-3xl rounded-bl-[80px] p-10 flex items-center bg-[url('../src/img/auth-1-bg.png')] bg-cover bg-center">
+          <div class="flex flex-col w-full rounded-3xl p-12 pb-6 h-full bg-white">
+            <h3 class="text-4xl text-dark-grey-900 font-extrabold mb-3">Sign In</h3>
+            <p class="text-grey-700 mb-4">Enter your email and password</p>
+            <button class="w-full rounded-2xl mb-6 text-sm text-grey-900 font-medium py-4 bg-grey-300 flex justify-center items-center">
+              <img class="h-5 mr-2" src="../../img/logos/logo-google.png" alt="">
+              Sign in with Google
+            </button>
+            <div class="flex items-center mb-3">
+              <hr class="border-b border-solid border-grey-500 h-0 grow">
+              <p class="text-grey-600 mx-4">or</p>
+              <hr class="border-b border-solid border-grey-500 h-0 grow">
+            </div>
+            <label for="email" class="mb-2 text-sm text-grey-900">Email*</label>
+            <input id="email" type="email" placeholder="mail@loopple.com" class="flex mb-7 w-full px-5 py-4 outline-none placeholder:text-grey-700 mr-2 items-center text-sm font-medium bg-grey-200 text-dark-grey-900 rounded-2xl"/>
+            <label for="password" class="mb-2 text-sm text-grey-900">Password*</label>
+            <input id="password" type="password" placeholder="Enter a password" class="flex mb-5 w-full px-5 py-4 outline-none placeholder:text-grey-700 mr-2 items-center text-sm font-medium bg-grey-200 text-dark-grey-900 rounded-2xl"/>
+            <div class="flex flex-row mb-8 justify-between">
+              <label class="relative inline-flex items-center mr-3 cursor-pointer select-none">
+                <input type="checkbox" checked value="" class="sr-only peer">
+                <div
+                  class="w-5 h-5 border-2 border-grey-500 bg-white rounded-sm peer peer-checked:border-0 peer-checked:bg-purple-blue-500">
+                  <img class="" src="../../img/icons/check.png" alt="tick">
+                </div>
+                <span class="ml-3 text-sm font-normal text-grey-900">Keep me logged in</span>
+              </label>
+              <a href="javascript:void(0)" class="text-sm mr-4 text-purple-blue-500 font-medium">Forget password?</a>
+            </div>
+            <button class="text-sm leading-none rounded-2xl mb-5 font-bold bg-purple-blue-500 w-full py-5 px-6 text-white">Sign In</button>
+            <p class="text-grey-900 text-sm leading-relaxed">Not registered yet? <span class="text-grey-700 font-bold">Create an Account</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="w-6/12 px-44 flex flex-col justify-center">
+        <h1 class="text-6xl leading-tight mb-8 text-dark-grey-900 font-extrabold">Make the best move to join our community! ️</h1>
+        <p class="text-lg text-grey-700 font-normal">Save hundreds of hours trying to create and develop a dashboard from scratch.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
