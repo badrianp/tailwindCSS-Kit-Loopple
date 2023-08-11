@@ -612,6 +612,10 @@ html {
   border-width: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -622,6 +626,10 @@ html {
 
 .relative {
   position: relative;
+}
+
+.-bottom-4 {
+  bottom: -1rem;
 }
 
 .bottom-0 {
@@ -642,14 +650,6 @@ html {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.top-full {
-  top: 100%;
-}
-
-.-bottom-4 {
-  bottom: -1rem;
 }
 
 .-z-40 {
@@ -839,16 +839,20 @@ html {
   margin-top: auto;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
 
 .box-content {
   box-sizing: content-box;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -883,6 +887,10 @@ html {
   height: 4rem;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-2\/3 {
   height: 66.666667%;
 }
@@ -893,10 +901,6 @@ html {
 
 .h-24 {
   height: 6rem;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .h-4\/5 {
@@ -931,10 +935,6 @@ html {
   height: 100vh;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -963,6 +963,10 @@ html {
   width: 4rem;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .w-2\/12 {
   width: 16.666667%;
 }
@@ -977,10 +981,6 @@ html {
 
 .w-3\/4 {
   width: 75%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .w-4\/12 {
@@ -1025,10 +1025,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .min-w-full {
@@ -1306,6 +1302,11 @@ html {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-dark-grey-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 155 186 / var(--tw-bg-opacity));
+}
+
 .bg-grey-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(246 248 253 / var(--tw-bg-opacity));
@@ -1345,9 +1346,9 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-dark-grey-500 {
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(143 155 186 / var(--tw-bg-opacity));
+  background-color: rgb(67 24 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/src\/img\/auth-1-bg\.png\'\)\] {

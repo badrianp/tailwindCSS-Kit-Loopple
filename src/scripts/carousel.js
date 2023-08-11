@@ -3,6 +3,7 @@ if (document.querySelector('[data-carousel]')) {
   let carousels = document.querySelectorAll('[data-carousel]');
   carousels.forEach(carousel => {
     if (carousel.querySelector('[data-carousel-btn=prev]') && carousel.querySelector('[data-carousel-btn=next]')) {
+
       let prev_button = carousel.querySelector('[data-carousel-btn=prev]');
       let next_button = carousel.querySelector('[data-carousel-btn=next]');
       
@@ -28,13 +29,9 @@ if (document.querySelector('[data-carousel]')) {
           navigation.addEventListener('click', (event) => {
             const slide = document.querySelector(event.target.getAttribute('href'));
             if (!slide) return;
-            
-            if (slide.scrollIntoViewIfNeeded) {
+            if (slide.scrollIntoView) {
               event.preventDefault();
-              slide.scrollIntoViewIfNeeded();
-            } else if (slide.scrollIntoView) {
-              event.preventDefault();
-              slide.scrollIntoView();
+              slide.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" })
             }
             navigations.forEach(navigation => {
               navigation.classList.add('bg-dark-grey-500');
@@ -54,6 +51,31 @@ if (document.querySelector('[data-carousel]')) {
           navigations[currentSlide].classList.remove('bg-dark-grey-500');
           navigations[currentSlide].classList.add('bg-purple-blue-500');
         });
+
+        let lastActivityTime = Date.now();
+
+        function updateActivityTime() {
+          lastActivityTime = Date.now();
+        }
+        
+        carousel.addEventListener('mousemove', () => {
+          updateActivityTime();
+        });
+
+        function checkMouseActivity() {
+          let currentTime = Date.now();
+          let elapsedTime = currentTime - lastActivityTime;
+
+          if (elapsedTime >= 4000) {
+            if ((carousel.getBoundingClientRect().bottom < window.innerHeight) && (carousel.getBoundingClientRect().top > 0)) {
+              next_button.click();
+            }
+          }
+        }
+
+        setInterval(checkMouseActivity, 6500);
+
+        
       } else {
         next_button.addEventListener('click', () => {
           carousel_container.scrollBy(slideWidth, 0);

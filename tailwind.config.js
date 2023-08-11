@@ -222,7 +222,7 @@ module.exports = {
 
       },
       boxShadow: {
-        main: '0px 32px 64px -12px rgba(85, 105, 135, 0.13);'
+        main: '0px 32px 64px -12px rgba(85, 105, 135, 0.13);',
       },
       fontFamily: {
         'plus-jakarta': ['Plus Jakarta Sans', 'sans-serif'],
