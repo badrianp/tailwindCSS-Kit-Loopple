@@ -73,7 +73,9 @@ if (document.querySelector('[data-carousel]')) {
           }
         }
 
-        setInterval(checkMouseActivity, 6500);
+        if(carousel.getAttribute('data-carousel-autoplay') == 'true') {
+          setInterval(checkMouseActivity, 6500);
+        }
 
         
       } else {
