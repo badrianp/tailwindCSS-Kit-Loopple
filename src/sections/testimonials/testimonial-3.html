@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center min-h-screen">
+  <div class="w-full">
+    <div class="container flex flex-col mx-auto my-32 gap-14">
+      <div data-carousel data-carousel-autoplay="false" class="relative flex flex-col items-center w-full h-full p-2">
+        <div class="absolute flex items-center justify-between w-full -translate-y-1/2 top-1/2">
+          <button data-carousel-btn="prev" class="flex items-center justify-center w-12 h-12 rounded-full lg:bg-grey-300 bg-grey-300/75">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <path d="M17 11.5H9.41002L12.71 8.21C12.8983 8.0217 13.0041 7.7663 13.0041 7.5C13.0041 7.2337 12.8983 6.97831 12.71 6.79C12.5217 6.6017 12.2663 6.49591 12 6.49591C11.7337 6.49591 11.4783 6.6017 11.29 6.79L6.29002 11.79C6.19898 11.8851 6.12761 11.9973 6.08002 12.12C5.98 12.3635 5.98 12.6365 6.08002 12.88C6.12761 13.0028 6.19898 13.1149 6.29002 13.21L11.29 18.21C11.383 18.3037 11.4936 18.3781 11.6154 18.4289C11.7373 18.4797 11.868 18.5058 12 18.5058C12.132 18.5058 12.2627 18.4797 12.3846 18.4289C12.5065 18.3781 12.6171 18.3037 12.71 18.21C12.8037 18.117 12.8781 18.0064 12.9289 17.8846C12.9797 17.7627 13.0058 17.632 13.0058 17.5C13.0058 17.368 12.9797 17.2373 12.9289 17.1154C12.8781 16.9936 12.8037 16.883 12.71 16.79L9.41002 13.5H17C17.2652 13.5 17.5196 13.3946 17.7071 13.2071C17.8947 13.0196 18 12.7652 18 12.5C18 12.2348 17.8947 11.9804 17.7071 11.7929C17.5196 11.6054 17.2652 11.5 17 11.5Z" fill="#1B2559"/>
+            </svg>
+          </button>
+          <button data-carousel-btn="next" class="flex items-center justify-center w-12 h-12 rounded-full lg:bg-grey-300 bg-grey-300/75">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <path d="M6.99998 13.5L14.59 13.5L11.29 16.79C11.1017 16.9783 10.9959 17.2337 10.9959 17.5C10.9959 17.7663 11.1017 18.0217 11.29 18.21C11.4783 18.3983 11.7337 18.5041 12 18.5041C12.2663 18.5041 12.5217 18.3983 12.71 18.21L17.71 13.21C17.801 13.1149 17.8724 13.0027 17.92 12.88C18.02 12.6365 18.02 12.3635 17.92 12.12C17.8724 11.9972 17.801 11.8851 17.71 11.79L12.71 6.79C12.617 6.69627 12.5064 6.62187 12.3846 6.57111C12.2627 6.52034 12.132 6.4942 12 6.4942C11.868 6.4942 11.7373 6.52034 11.6154 6.57111C11.4935 6.62187 11.3829 6.69627 11.29 6.79C11.1963 6.88296 11.1219 6.99356 11.0711 7.11542C11.0203 7.23728 10.9942 7.36799 10.9942 7.5C10.9942 7.63201 11.0203 7.76271 11.0711 7.88457C11.1219 8.00643 11.1963 8.11703 11.29 8.21L14.59 11.5L6.99998 11.5C6.73477 11.5 6.48041 11.6054 6.29287 11.7929C6.10534 11.9804 5.99998 12.2348 5.99998 12.5C5.99998 12.7652 6.10534 13.0196 6.29287 13.2071C6.48041 13.3946 6.73477 13.5 6.99998 13.5Z" fill="#1B2559"/>
+            </svg>
+          </button>
+        </div>
+        <div data-carousel-container class="flex w-full h-full gap-8 p-4 overflow-x-auto lg:w-10/12 overscroll-contain scroll-smooth snap-mandatory snap-x">
+          <div data-carousel-slide="1" id="slide-1" class="flex flex-col items-center min-w-full lg:justify-between lg:flex-row snap-center snap-always gap-y-5">
+            <div class="flex flex-col items-center justify-center gap-4 lg:w-5/12 xl:w-4/12 md:flex-row">
+              <span class="shrink-0 w-16 h-16 rounded-full bg-[url('../src/img/avatars/avatar-3.jpeg')] bg-cover bg-center">
+              </span>
+              <div class="flex flex-col items-center text-center md:text-start md:items-start">
+                <p class="text-2xl font-bold text-dark-grey-900">Tiana Schleifer</p>
+                <p class="text-sm font-medium text-dark-grey-500">CEO & Founder at Windbase</p>
+              </div>
+            </div>
+            <div class="lg:w-7/12">
+              <h3 class="text-2xl font-bold text-center text-dark-grey-900">“A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.”</h3>
+            </div>
+          </div>
+          <div data-carousel-slide="2" id="slide-2" class="flex flex-col items-center min-w-full lg:justify-between lg:flex-row snap-center snap-always gap-y-5">
+            <div class="flex flex-col items-center justify-center gap-4 lg:w-5/12 xl:w-4/12 md:flex-row">
+              <span class="shrink-0 w-16 h-16 rounded-full bg-[url('../src/img/avatars/avatar-4.jpeg')] bg-cover bg-center">
+              </span>
+              <div class="flex flex-col items-center text-center md:text-start md:items-start">
+                <p class="text-2xl font-bold text-dark-grey-900">Benjamin Carter</p>
+                <p class="text-sm font-medium text-dark-grey-500">COO</p>
+              </div>
+            </div>
+            <div class="lg:w-7/12">
+              <h3 class="text-2xl font-bold text-center text-dark-grey-900">“A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.”</h3>
+            </div>
+          </div>
+          <div data-carousel-slide="3" id="slide-3" class="flex flex-col items-center min-w-full lg:justify-between lg:flex-row snap-center snap-always gap-y-5">
+            <div class="flex flex-col items-center justify-center gap-4 lg:w-5/12 xl:w-4/12 md:flex-row">
+              <span class="shrink-0 w-16 h-16 rounded-full bg-[url('../src/img/avatars/avatar-2.jpeg')] bg-cover bg-center">
+              </span>
+              <div class="flex flex-col items-center text-center md:text-start md:items-start">
+                <p class="text-2xl font-bold text-dark-grey-900">James Anderson</p>
+                <p class="text-sm font-medium text-dark-grey-500">Product Manager</p>
+              </div>
+            </div>
+            <div class="lg:w-7/12">
+              <h3 class="text-2xl font-bold text-center text-dark-grey-900">“A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.”</h3>
+            </div>
+          </div>
+        </div>
+        <div data-carousel-navigation class="absolute flex items-center justify-center invisible gap-2">
+          <a href="#slide-1" class="w-2 h-2 rounded-full bg-purple-blue-500"></a>
+          <a href="#slide-2" class="w-2 h-2 rounded-full bg-dark-grey-500"></a>
+          <a href="#slide-3" class="w-2 h-2 rounded-full bg-dark-grey-500"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script defer src="../../scripts/carousel.js"></script>
+</html>

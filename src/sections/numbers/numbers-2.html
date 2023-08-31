@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center min-h-screen">
+  <div class="w-full">
+    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-3xl font-extrabold text-center md:text-4xl text-dark-grey-900">Boost your workflow with Thunder</h2>
+        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Urna duis convallis convallis tellus interdum velit laoreet pellentesque aliquam tortor consequat porta.</p>
+      </div>
+      <div class="grid w-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-8">
+        <div class="flex flex-col items-center">
+          <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto1" countTo="340"></span>+</h3>
+          <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Successful Projects</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">$<span id="countto2" countTo="10"></span>m</h3>
+          <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Annual Percentage Rate</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto3" countTo="2.8" data-decimal="1"></span>k+</h3>
+          <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Clients Worldwide</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto4" countTo="7000"></span>+</h3>
+          <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Daily Visits</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../scripts/plugins/countup.min.js"></script>
+<script src="../../scripts/countto.js"></script>
+
+</html>

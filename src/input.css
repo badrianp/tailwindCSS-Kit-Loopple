@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased font-plus-jakarta;
+  }
+
+
+    /* Firefox */
+    [data-carousel] * {
+      scrollbar-width: none;
+      -ms-overflow-style: none; /* Hide scrollbar on Internet Explorer and Edge */
+    }
+  
+    /* Chrome, Edge, and Safari */
+    [data-carousel] *::-webkit-scrollbar {
+      display: none;
+    }
+  
+}
