@@ -7,13 +7,28 @@ if (document.querySelector("[countTo]")) {
     let value = number.getAttribute("countTo");
     let countUp = new CountUp(ID, value);
 
-    if (number.hasAttribute("data-decimal")) {
-      const options = {
-          decimalPlaces: 1,
+    if (number.hasAttribute("data-no-grouping")) {
+      if (number.hasAttribute("data-decimal")) {
+        const options = {
+            useGrouping : false,
+            decimalPlaces: 1,
+          };
+        countUp = new CountUp(ID, value, options);
+      } else {
+        const options = {
+          useGrouping : false,
         };
-      countUp = new CountUp(ID, 2.8, options);
+        countUp = new CountUp(ID, value, options);
+      }
     } else {
-      countUp = new CountUp(ID, value);
+      if (number.hasAttribute("data-decimal")) {
+        const options = {
+            decimalPlaces: 1,
+          };
+        countUp = new CountUp(ID, 2.8, options);
+      } else {
+        countUp = new CountUp(ID, value);
+      }
     }
 
     if (!countUp.error) {

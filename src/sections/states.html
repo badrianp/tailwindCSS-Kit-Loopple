@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen">
+
+
+  
+  <div class="container flex flex-col h-full mx-auto">
+    <h3 class="mb-3 text-2xl">Buttons</h3>
+    <div class="w-full h-full my-auto xl:gap-14 md:gap-5">
+      <button class="w-full px-6 py-5 mb-5 text-sm font-bold leading-none text-white transition duration-300 rounded-2xl bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100">Sign In</button>
+
+      <hr class="my-3" />
+
+      <button class="flex items-center justify-center w-full py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl text-grey-900 bg-grey-300 hover:bg-grey-400 focus:ring-4 focus:ring-grey-300">
+        <img class="h-5 mr-2" src="./img/logos/logo-google.png" alt="">
+        Sign in with Google
+      </button>
+
+      <hr class="my-3" />
+
+      <button class="box-content flex items-center py-4 mb-3 mr-4 text-sm font-bold transition duration-300 border px-7 rounded-2xl border-purple-blue-500 text-purple-blue-500 hover:bg-purple-blue-500 hover:text-white focus:ring-4 focus:ring-purple-blue-100">Try Demo</button>
+
+      <hr class="my-3" />
+
+      <div class="flex items-center justify-center gap-4 px-3 py-4 mb-4 lg:justify-normal bg-purple-blue-500">
+        <button class="flex items-center py-4 text-sm font-bold transition duration-300 bg-white border border-white px-7 rounded-2xl text-dark-grey-900 hover:bg-gray-100">Get Started Now</button>
+        <button class="box-content flex items-center py-4 mr-4 text-sm font-bold text-white transition duration-300 border border-white px-7 rounded-2xl hover:bg-white hover:text-dark-grey-900">Try Demo</button>
+      </div>
+
+      <hr class="my-3" />
+
+      <div class="flex flex-col items-center gap-4 mb-3 lg:flex-row">
+        <button class="flex items-center py-4 text-sm font-bold text-white transition duration-300 px-7 bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 rounded-xl">Get started now</button>
+        <button class="flex items-center py-4 text-sm font-medium transition duration-300 px-7 text-dark-grey-900 hover:text-dark-grey-800 rounded-2xl">
+          <img class="h-6 mr-2" src="./img/icons/phone.png" alt="phone icon">
+          Book a free call
+        </button>
+      </div>
+
+      <hr class="my-3"/>
+
+      <button class="flex items-center px-4 py-2 text-sm font-bold transition duration-300 rounded-3xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white">Try it for Free</button>
+
+      <hr class="my-3"/>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-4 lg:mb-0 md:gap-0 md:flex-nowrap">
+          <button class="flex items-center py-4 text-sm font-bold text-white transition duration-300 md:mr-5 px-7 bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 rounded-2xl">Create account for Free</button>
+          <button class="box-border flex items-center py-4 text-sm font-medium transition duration-300 border border-solid border-grey-500 px-7 text-dark-grey-900 hover:text-dark-grey-800 hover:bg-gray-100 rounded-2xl">
+            <img class="h-5 mr-2" src="./img/icons/play.png" alt="phone icon">
+            Watch free demo
+          </button>
+        </div>
+    </div>
+
+    <hr class="my-3" />
+
+    <div class="items-center hidden gap-8 md:flex">
+        <button class="flex items-center text-sm font-normal text-gray-800 transition duration-300 hover:text-gray-900">Log In</button>
+        <button class="flex items-center px-4 py-2 text-sm font-bold transition duration-300 rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white">Sign
+          Up</button>
+      </div>
+
+    <h3 class="mt-10 mb-5 text-2xl">Inputs</h3>
+    <div class="items-center w-full h-full my-auto xl:gap-14 md:gap-5">
+      <label class="relative inline-flex items-center mr-3 cursor-pointer select-none">
+        <input type="checkbox" checked="" value="" class="sr-only peer">
+        <div class="flex items-center justify-center w-5 h-5 bg-white border-2 rounded border-grey-500 peer peer-checked:border-0 align-center peer-checked:bg-purple-blue-500">
+          <img class="w-4" src="./img/icons/check.png" alt="tick">
+        </div>
+        <span class="ml-3 text-sm font-normal text-grey-900">Keep me logged in</span>
+      </label>
+
+      <hr class="my-3" />
+
+      <input id="email" type="email" placeholder="mail@loopple.com" class="flex items-center w-full px-5 py-4 mr-2 text-sm font-medium outline-none placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl focus:bg-grey-400">
+
+      <hr class="my-3" />
+
+      <input class="p-4 border border-solid outline-none rounded-xl placeholder:text-sm placeholder:font-medium placeholder:text-dark-grey-500 border-grey-500 focus:border-grey-600" placeholder="Your first name " type="text" id="first-name">
+
+      <hr class="my-3" />
+
+      <div class="flex flex-col items-center justify-center w-full gap-4 mb-4 md:flex-row">
+        <div class="relative flex items-center">
+          <span class="absolute ml-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_4257_296)">
+                <path d="M8.47972 1.35305C4.41972 1.06639 1.06639 4.41972 1.35305 8.47972C1.59305 12.0064 4.67305 14.6664 8.20639 14.6664H10.6664C11.0331 14.6664 11.3331 14.3664 11.3331 13.9997C11.3331 13.6331 11.0331 13.3331 10.6664 13.3331H8.21972C5.73305 13.3331 3.45305 11.7197 2.83305 9.31305C1.83972 5.44639 5.43972 1.83972 9.30639 2.83972C11.7197 3.45305 13.3331 5.73305 13.3331 8.21972V8.95305C13.3331 9.47972 12.8597 9.99972 12.3331 9.99972C11.8064 9.99972 11.3331 9.47972 11.3331 8.95305V8.11972C11.3331 6.44639 10.1464 4.93972 8.49305 4.70639C6.22639 4.37972 4.31305 6.33972 4.71972 8.61972C4.94639 9.89305 5.93972 10.9464 7.19972 11.2464C8.42639 11.5331 9.59305 11.1397 10.3597 10.3597C10.9531 11.1731 12.1397 11.5997 13.2264 11.1664C14.1197 10.8131 14.6664 9.89972 14.6664 8.93972V8.21305C14.6664 4.67305 12.0064 1.59305 8.47972 1.35305V1.35305ZM7.99972 9.99972C6.89305 9.99972 5.99972 9.10639 5.99972 7.99972C5.99972 6.89305 6.89305 5.99972 7.99972 5.99972C9.10639 5.99972 9.99972 6.89305 9.99972 7.99972C9.99972 9.10639 9.10639 9.99972 7.99972 9.99972Z" fill="#1B2559"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_4257_296">
+                  <rect width="16" height="16" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <input type="search" placeholder="Search" class="flex items-center py-2 pl-10 pr-8 text-sm font-medium border border-solid outline-none grow placeholder:text-dark-grey-500 placeholder:text-sm placeholder:font-medium border-grey-500 focus:border-grey-600 text-dark-grey-900 rounded-xl">
+        </div>
+        <button class="flex items-center px-4 py-2 text-sm font-bold text-white transition duration-300 border rounded-xl border-purple-blue-500 bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100">Get Free Access</button>
+      </div>
+
+      <hr class="my-3" />
+
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-8 md:justify-normal lg:gap-0 lg:flex-nowrap">
+          <input type="email" placeholder="Enter email to get started" class="flex items-center py-4 pl-5 pr-8 mr-2 text-sm font-medium border border-solid rounded-full outline-none w-60 placeholder:text-grey-700 border-grey-500 text-dark-grey-900 focus:border-grey-600">
+          <button class="flex items-center py-4 text-sm font-bold text-white transition duration-300 rounded-full px-7 bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100">Start your 7 days trial</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
