@@ -221,8 +221,14 @@ module.exports = {
         'placeholder-grey': "#8F9BBA",
 
       },
+      backgroundImage: {
+        'main-gradient': 'linear-gradient(271deg, #9AE7FF -30.83%, #00D1FF 23.95%, #6017FF 62.96%, #C7BBFF 115.6%)',
+      },
       boxShadow: {
         main: '0px 32px 64px -12px rgba(85, 105, 135, 0.13);',
+      },
+      dropShadow: {
+        main: '0px 26px 47px rgba(67, 24, 255, 0.20)',
       },
       fontFamily: {
         'plus-jakarta': ['Plus Jakarta Sans', 'sans-serif'],
