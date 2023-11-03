@@ -223,6 +223,7 @@ module.exports = {
       },
       backgroundImage: {
         'main-gradient': 'linear-gradient(271deg, #9AE7FF -30.83%, #00D1FF 23.95%, #6017FF 62.96%, #C7BBFF 115.6%)',
+        'secondary-gradient': 'linear-gradient(135deg, #868CFF 0%, #4318FF 70.42%)',
       },
       boxShadow: {
         main: '0px 32px 64px -12px rgba(85, 105, 135, 0.13);',

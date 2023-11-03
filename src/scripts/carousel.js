@@ -4,6 +4,8 @@ if (document.querySelector('[data-carousel]')) {
   carousels.forEach(carousel => {
     if (carousel.querySelector('[data-carousel-btn=prev]') && carousel.querySelector('[data-carousel-btn=next]')) {
 
+      let videos = carousel.closest('[data-carousel-video]').querySelectorAll('[data-video-slide]');
+
       let prev_button = carousel.querySelector('[data-carousel-btn=prev]');
       let next_button = carousel.querySelector('[data-carousel-btn=next]');
       
@@ -14,7 +16,10 @@ if (document.querySelector('[data-carousel]')) {
       console.log(currentSlide);
       
       if (carousel.querySelector('[data-carousel-navigation] a') && (carousel_container.querySelectorAll('[data-carousel-slide]').length == carousel.querySelectorAll('[data-carousel-navigation] a').length)) {
-        let navigations = carousel.querySelectorAll('[data-carousel-navigation] a');
+        let navigation = carousel.querySelector('[data-carousel-navigation]');
+        let navigations = navigation.querySelectorAll('a');
+        let navigation_active_color = navigation.getAttribute('data-active-color');
+        let navigation_inactive_color = navigation.getAttribute('data-inactive-color');
         next_button.addEventListener('click', () => {
           currentSlide = Math.round(carousel_container.scrollLeft / slideWidth);
           navigations[(currentSlide + 1 + navigations.length) % navigations.length].click();
@@ -34,23 +39,36 @@ if (document.querySelector('[data-carousel]')) {
               slide.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" })
             }
             navigations.forEach(navigation => {
-              navigation.classList.add('bg-dark-grey-500');
-              navigation.classList.remove('bg-purple-blue-500');
+              navigation.classList.add(navigation_inactive_color);
+              navigation.classList.remove(navigation_active_color);
             });
-            navigation.classList.remove('bg-dark-grey-500');
-            navigation.classList.add('bg-purple-blue-500');
+            navigation.classList.remove(navigation_inactive_color);
+            navigation.classList.add(navigation_active_color);
           });
         });
 
+        currentSlide = Math.round(carousel_container.scrollLeft / slideWidth);
         carousel_container.addEventListener('scroll', () => {
-          currentSlide = Math.round(carousel_container.scrollLeft / slideWidth);
-          navigations.forEach(navigation => {
-            navigation.classList.add('bg-dark-grey-500');
-            navigation.classList.remove('bg-purple-blue-500');
+            newSlide = Math.round(carousel_container.scrollLeft / slideWidth);
+            if (newSlide != currentSlide) {
+              currentSlide = newSlide;
+              navigations.forEach(navigation => {
+                navigation.classList.add(navigation_inactive_color);
+                navigation.classList.remove(navigation_active_color);
+              });
+              videos.forEach(video => {
+                video.classList.add('opacity-0');
+                video.classList.add('-z-20');
+              });
+              navigations[currentSlide].classList.remove(navigation_inactive_color);
+              navigations[currentSlide].classList.add(navigation_active_color);
+              videos[currentSlide].classList.remove('-z-20')
+              setTimeout(function(){
+                videos[currentSlide].classList.remove('opacity-0')
+              }, 100);
+            }
+            
           });
-          navigations[currentSlide].classList.remove('bg-dark-grey-500');
-          navigations[currentSlide].classList.add('bg-purple-blue-500');
-        });
 
         let lastActivityTime = Date.now();
 

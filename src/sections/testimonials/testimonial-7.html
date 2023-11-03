@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center min-h-screen">
+  <div class="w-full">
+    <div class="container flex flex-col gap-16 mx-auto my-14">
+      <div data-carousel-video class="relative flex flex-col items-center w-full gap-0 md:flex-row h-min rounded-3xl">
+        <div class="relative flex flex-row items-center justify-center w-2/3 h-full -mr-1 md:w-1/3">
+          <video data-video-slide="1" class="absolute w-full -mt-4 transition-opacity duration-300 ease-in-out md:mt-0 rounded-3xl" controls muted>
+            <source src="../../video/video-1.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video data-video-slide="2" class="absolute w-full -mt-4 transition-opacity duration-300 ease-in-out opacity-0 -z-20 md:mt-0 rounded-3xl" controls muted>
+            <source src="../../video/video-2.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video data-video-slide="3" class="absolute w-full -mt-4 transition-opacity duration-300 ease-in-out opacity-0 -z-20 md:mt-0 rounded-3xl" controls muted>
+            <source src="../../video/video-3.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video data-video-slide="1" class="relative invisible w-full -mt-4 transition-opacity duration-300 ease-in-out md:mt-0 rounded-3xl" controls muted>
+            <source src="../../video/video-1.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video data-video-slide="2" class="relative invisible w-full -mt-4 transition-opacity duration-300 ease-in-out -translate-x-full opacity-0 -z-20 md:mt-0 rounded-3xl" controls muted>
+            <source src="../../video/video-2.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video data-video-slide="3" class="relative invisible w-full -mt-4 transition-opacity duration-300 ease-in-out -translate-x-full opacity-0 -z-20 md:mt-0 rounded-3xl" controls muted>
+            <source src="../../video/video-3.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="flex flex-row-reverse justify-center w-full h-full -mt-3 md:mt-0 md:w-2/3 md:justify-normal rounded-3xl md:rounded-l-none bg-secondary-gradient">
+          <div class="ml-2 lg:ml-12 md:ml-3">
+            <div data-carousel data-carousel-autoplay="true" class="relative flex flex-col items-start w-full h-full py-8 xl:w-8/12 lg:py-10 xl:py-14">
+              <div class="absolute items-center justify-between hidden w-full -translate-y-1/2 top-1/2">
+                <button data-carousel-btn="prev" class="flex items-center justify-center w-12 h-12 rounded-full md:bg-grey-300 bg-grey-300/75">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M17 11.5H9.41002L12.71 8.21C12.8983 8.0217 13.0041 7.7663 13.0041 7.5C13.0041 7.2337 12.8983 6.97831 12.71 6.79C12.5217 6.6017 12.2663 6.49591 12 6.49591C11.7337 6.49591 11.4783 6.6017 11.29 6.79L6.29002 11.79C6.19898 11.8851 6.12761 11.9973 6.08002 12.12C5.98 12.3635 5.98 12.6365 6.08002 12.88C6.12761 13.0028 6.19898 13.1149 6.29002 13.21L11.29 18.21C11.383 18.3037 11.4936 18.3781 11.6154 18.4289C11.7373 18.4797 11.868 18.5058 12 18.5058C12.132 18.5058 12.2627 18.4797 12.3846 18.4289C12.5065 18.3781 12.6171 18.3037 12.71 18.21C12.8037 18.117 12.8781 18.0064 12.9289 17.8846C12.9797 17.7627 13.0058 17.632 13.0058 17.5C13.0058 17.368 12.9797 17.2373 12.9289 17.1154C12.8781 16.9936 12.8037 16.883 12.71 16.79L9.41002 13.5H17C17.2652 13.5 17.5196 13.3946 17.7071 13.2071C17.8947 13.0196 18 12.7652 18 12.5C18 12.2348 17.8947 11.9804 17.7071 11.7929C17.5196 11.6054 17.2652 11.5 17 11.5Z" fill="#1B2559"/>
+                  </svg>
+                </button>
+                <button data-carousel-btn="next" class="flex items-center justify-center w-12 h-12 rounded-full md:bg-grey-300 bg-grey-300/75">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M6.99998 13.5L14.59 13.5L11.29 16.79C11.1017 16.9783 10.9959 17.2337 10.9959 17.5C10.9959 17.7663 11.1017 18.0217 11.29 18.21C11.4783 18.3983 11.7337 18.5041 12 18.5041C12.2663 18.5041 12.5217 18.3983 12.71 18.21L17.71 13.21C17.801 13.1149 17.8724 13.0027 17.92 12.88C18.02 12.6365 18.02 12.3635 17.92 12.12C17.8724 11.9972 17.801 11.8851 17.71 11.79L12.71 6.79C12.617 6.69627 12.5064 6.62187 12.3846 6.57111C12.2627 6.52034 12.132 6.4942 12 6.4942C11.868 6.4942 11.7373 6.52034 11.6154 6.57111C11.4935 6.62187 11.3829 6.69627 11.29 6.79C11.1963 6.88296 11.1219 6.99356 11.0711 7.11542C11.0203 7.23728 10.9942 7.36799 10.9942 7.5C10.9942 7.63201 11.0203 7.76271 11.0711 7.88457C11.1219 8.00643 11.1963 8.11703 11.29 8.21L14.59 11.5L6.99998 11.5C6.73477 11.5 6.48041 11.6054 6.29287 11.7929C6.10534 11.9804 5.99998 12.2348 5.99998 12.5C5.99998 12.7652 6.10534 13.0196 6.29287 13.2071C6.48041 13.3946 6.73477 13.5 6.99998 13.5Z" fill="#1B2559"/>
+                  </svg>
+                </button>
+              </div>
+              <div data-carousel-container class="flex w-full h-full gap-8 mt-2 overflow-x-auto scroll-smooth snap-mandatory snap-x">
+                <div data-carousel-slide="1" id="carousel-1-slide-1" class="flex flex-col items-center justify-center min-w-full snap-center snap-always">
+                  <div class="flex flex-col items-center gap-3 text-center md:text-start md:items-start">
+                    <h2 class="text-xl font-semibold text-white lg:text-2xl xl:text-3xl">“Must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.”</h2>
+                    <div class="flex flex-col gap-2">
+                      <p class="text-xl font-semibold leading-normal text-white">Tiana Schleifer</p>
+                      <p class="text-sm font-medium text-grey-500">CEO & Founder at Windbase</p>
+                    </div>
+                  </div>
+                </div>
+                <div data-carousel-slide="2" id="carousel-1-slide-2" class="flex flex-col items-center justify-center min-w-full snap-center snap-always">
+                  <div class="flex flex-col items-center gap-3 text-center md:text-start md:items-start">
+                    <h2 class="text-xl font-semibold text-white lg:text-2xl xl:text-3xl">“One of the most comprehensive all-in-one design kit. From account to stats and messages, you have all the necessary examples to start your project.”</h2>
+                    <div class="flex flex-col gap-2">
+                      <p class="text-xl font-semibold leading-normal text-white">Sophia Johnson</p>
+                      <p class="text-sm font-medium text-grey-500">Product Manager</p>
+                    </div>
+                  </div>
+                </div>
+                <div data-carousel-slide="3" id="carousel-1-slide-3" class="flex flex-col items-center justify-center min-w-full snap-center snap-always">
+                  <div class="flex flex-col items-center gap-3 text-center md:text-start md:items-start">
+                    <h2 class="text-xl font-semibold text-white lg:text-2xl xl:text-3xl">“The most comprehensive all-in-one design kit. From account to stats and messages, you have all the necessary examples to start your project.”</h2>
+                    <div class="flex flex-col gap-2">
+                      <p class="text-xl font-semibold leading-normal text-white">Benjamin Carter</p>
+                      <p class="text-sm font-medium text-grey-500">Frontend Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-carousel-navigation data-inactive-color="bg-purple-blue-300" data-active-color="bg-white" class="flex items-center justify-center w-full gap-2 mt-6 md:justify-start md:mt-4 lg:mt-8 ">
+                <a href="#carousel-1-slide-1" class="w-2 h-2 transition-colors duration-200 bg-white rounded-full"></a>
+                <a href="#carousel-1-slide-2" class="w-2 h-2 transition-colors duration-200 rounded-full bg-purple-blue-300"></a>
+                <a href="#carousel-1-slide-3" class="w-2 h-2 transition-colors duration-200 rounded-full bg-purple-blue-300"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script defer src="../../scripts/carousel.js"></script>
+
+</html>
