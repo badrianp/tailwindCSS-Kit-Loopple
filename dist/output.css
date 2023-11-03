@@ -825,6 +825,11 @@ html {
   margin-bottom: auto;
 }
 
+.my-28 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
 .-ml-2 {
   margin-left: -0.5rem;
 }
@@ -1361,12 +1366,20 @@ html {
   width: 100vw;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
 
 .max-w-none {
   max-width: none;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .shrink-0 {
@@ -2157,6 +2170,11 @@ html {
 .object-top {
   -o-object-position: top;
      object-position: top;
+}
+
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .p-10 {
@@ -3273,6 +3291,10 @@ html {
 
   .lg\:w-9\/12 {
     width: 75%;
+  }
+
+  .lg\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .lg\:rotate-0 {
