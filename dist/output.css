@@ -981,6 +981,10 @@ html {
   margin-top: auto;
 }
 
+.-mr-px {
+  margin-right: -1px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
